@@ -17,6 +17,7 @@
 		60C5810B2BBECC7100F49357 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5810A2BBECC7100F49357 /* APIs.swift */; };
 		60C5810F2BBECFD800F49357 /* CoffeeOrderListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5810E2BBECFD800F49357 /* CoffeeOrderListScreen.swift */; };
 		60C581112BBED5B600F49357 /* RoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C581102BBED5B600F49357 /* RoutePath.swift */; };
+		60C581152BBEDB1100F49357 /* AddOrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C581142BBEDB1100F49357 /* AddOrderScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		60C5810A2BBECC7100F49357 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		60C5810E2BBECFD800F49357 /* CoffeeOrderListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderListScreen.swift; sourceTree = "<group>"; };
 		60C581102BBED5B600F49357 /* RoutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePath.swift; sourceTree = "<group>"; };
+		60C581142BBEDB1100F49357 /* AddOrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				60C5810E2BBECFD800F49357 /* CoffeeOrderListScreen.swift */,
+				60C581142BBEDB1100F49357 /* AddOrderScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				60C581052BBEC92100F49357 /* HttpClients.swift in Sources */,
 				60C581092BBECC2000F49357 /* CoffeeOrder.swift in Sources */,
 				60C5810B2BBECC7100F49357 /* APIs.swift in Sources */,
+				60C581152BBEDB1100F49357 /* AddOrderScreen.swift in Sources */,
 				60C5810F2BBECFD800F49357 /* CoffeeOrderListScreen.swift in Sources */,
 				60C581112BBED5B600F49357 /* RoutePath.swift in Sources */,
 				60C581072BBECBFC00F49357 /* Model.swift in Sources */,

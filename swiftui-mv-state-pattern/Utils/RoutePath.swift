@@ -8,5 +8,6 @@
 import Foundation
 
 enum RoutePath: String {
+    case addOrderScreen
     case orderDetailScreen
 }

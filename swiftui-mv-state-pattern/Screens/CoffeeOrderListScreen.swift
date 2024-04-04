@@ -10,17 +10,18 @@ import SwiftUI
 struct CoffeeOrderListScreen: View {
     @Binding var path: [RoutePath]
     @EnvironmentObject var model: Model
-    @State private var addOrderSheetPresented: Bool = false
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             VStack {
                 ScrollView {
                     ForEach(model.orders) { order in
-                        NavigationLink(value: order) {
+                        Button {
+                            path = [.orderDetailScreen]
+                        } label: {
                             VStack {
                                 HStack {
-                                    Text("#" + order.name.replacingOccurrences(of: " ", with: "") + UUID().uuidString.prefix(4))
+                                    Text("#" + order.name.replacingOccurrences(of: " ", with: ""))
                                     Spacer()
                                     Image(systemName: "chevron.right")
                                 }
@@ -32,17 +33,17 @@ struct CoffeeOrderListScreen: View {
                 }
             }
             .navigationDestination(for: RoutePath.self, destination: { selection in
-                if selection == .orderDetailScreen {
+                if selection == .addOrderScreen {
+                    AddOrderScreen()
+                } else if selection == .orderDetailScreen {
                     Text("order detail screen")
-                } else {
-                    Text("Unavailable screen")
                 }
             })
             .navigationTitle("Orders")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Add order") {
-                        addOrderSheetPresented = true
+                        path = [.addOrderScreen]
                     }
                 }
             }
@@ -53,9 +54,6 @@ struct CoffeeOrderListScreen: View {
                     print(error.localizedDescription)
                 }
             }
-            .sheet(isPresented: $addOrderSheetPresented, content: {
-                Text("add order sheet")
-            })
         }
     }
 }
