@@ -37,13 +37,19 @@ struct CoffeeOrderListScreen: View {
                     AddOrderScreen()
                 } else if selection == .orderDetailScreen {
                     Text("order detail screen")
+                } else if selection == .historyDetail {
+                    HistoryDetailScene(viewModel: .init())
                 }
             })
             .navigationTitle("Orders")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Add order") {
+                    HStack {Button("Add order") {
                         path = [.addOrderScreen]
+                    }
+                        Button("History Detail") {
+                            path = [.historyDetail]
+                        }
                     }
                 }
             }
