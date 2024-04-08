@@ -1,0 +1,14 @@
+{
+  "status": true,
+  "data": {
+    "status": "success",
+    "location_name": "Gridserve Charging Station",
+    "transaction_date": "2024-04-01T06:21:14.000Z",
+    "charged_amount": 41.5,
+    "generated_kwh": 21,
+    "image": "https://picsum.photos/200",
+    "admin_fee": 2.5,
+    "discount": 0.01,
+    "order_id": "ch010101"
+  }
+}
