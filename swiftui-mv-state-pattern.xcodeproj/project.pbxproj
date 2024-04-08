@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600A3D992BC3C249007E96DC /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 600A3D982BC3C249007E96DC /* CombineExt */; };
 		60C580F02BBEC42600F49357 /* swiftui_mv_state_patternApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C580EF2BBEC42600F49357 /* swiftui_mv_state_patternApp.swift */; };
 		60C580F22BBEC42600F49357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C580F12BBEC42600F49357 /* ContentView.swift */; };
 		60C580F42BBEC42700F49357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C580F32BBEC42700F49357 /* Assets.xcassets */; };
@@ -41,12 +42,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600A3D992BC3C249007E96DC /* CombineExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		600A3D9A2BC3C290007E96DC /* GridserveStyle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GridserveStyle;
+			sourceTree = "<group>";
+		};
 		60C580E32BBEC42600F49357 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +75,7 @@
 		60C580EE2BBEC42600F49357 /* swiftui-mv-state-pattern */ = {
 			isa = PBXGroup;
 			children = (
+				600A3D9A2BC3C290007E96DC /* GridserveStyle */,
 				60C581022BBEC87B00F49357 /* Models */,
 				60C580FE2BBEC61D00F49357 /* Screens */,
 				60C581012BBEC65300F49357 /* Utils */,
@@ -146,6 +156,9 @@
 			dependencies = (
 			);
 			name = "swiftui-mv-state-pattern";
+			packageProductDependencies = (
+				600A3D982BC3C249007E96DC /* CombineExt */,
+			);
 			productName = "swiftui-mv-state-pattern";
 			productReference = 60C580EC2BBEC42600F49357 /* swiftui-mv-state-pattern.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 60C580E32BBEC42600F49357;
+			packageReferences = (
+				600A3D972BC3C249007E96DC /* XCRemoteSwiftPackageReference "CombineExt" */,
+			);
 			productRefGroup = 60C580ED2BBEC42600F49357 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		600A3D972BC3C249007E96DC /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		600A3D982BC3C249007E96DC /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 600A3D972BC3C249007E96DC /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60C580E42BBEC42600F49357 /* Project object */;
 }
