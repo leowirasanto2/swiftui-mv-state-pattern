@@ -13,7 +13,7 @@
 		600A3DA42BC3CED0007E96DC /* detail-dummy-inprogress.json in Resources */ = {isa = PBXBuildFile; fileRef = 600A3DA32BC3CED0007E96DC /* detail-dummy-inprogress.json */; };
 		600A3DA62BC3CEE9007E96DC /* detail-dummy-failed.json in Resources */ = {isa = PBXBuildFile; fileRef = 600A3DA52BC3CEE9007E96DC /* detail-dummy-failed.json */; };
 		600A3DA82BC3CEF4007E96DC /* detail-dummy-success.json in Resources */ = {isa = PBXBuildFile; fileRef = 600A3DA72BC3CEF4007E96DC /* detail-dummy-success.json */; };
-		600A3DAA2BC3CF21007E96DC /* DummyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600A3DA92BC3CF21007E96DC /* DummyJSON.swift */; };
+		600A3DAA2BC3CF21007E96DC /* DummyJsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600A3DA92BC3CF21007E96DC /* DummyJsonService.swift */; };
 		600A3DAD2BC3D13A007E96DC /* HistoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600A3DAC2BC3D13A007E96DC /* HistoryDetailModel.swift */; };
 		60C580F02BBEC42600F49357 /* swiftui_mv_state_patternApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C580EF2BBEC42600F49357 /* swiftui_mv_state_patternApp.swift */; };
 		60C580F22BBEC42600F49357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C580F12BBEC42600F49357 /* ContentView.swift */; };
@@ -26,6 +26,10 @@
 		60C5810F2BBECFD800F49357 /* CoffeeOrderListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5810E2BBECFD800F49357 /* CoffeeOrderListScreen.swift */; };
 		60C581112BBED5B600F49357 /* RoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C581102BBED5B600F49357 /* RoutePath.swift */; };
 		60C581152BBEDB1100F49357 /* AddOrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C581142BBEDB1100F49357 /* AddOrderScreen.swift */; };
+		60CD9BBF2BC8E7550033F343 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD9BBE2BC8E7550033F343 /* HistoryService.swift */; };
+		60CD9BC22BC8E8320033F343 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 60CD9BC12BC8E8320033F343 /* Dependencies */; };
+		60CD9BC42BC8E8320033F343 /* DependenciesMacros in Frameworks */ = {isa = PBXBuildFile; productRef = 60CD9BC32BC8E8320033F343 /* DependenciesMacros */; };
+		60CD9BC62BC8E8F90033F343 /* RegisterDepenency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD9BC52BC8E8F90033F343 /* RegisterDepenency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +38,7 @@
 		600A3DA32BC3CED0007E96DC /* detail-dummy-inprogress.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detail-dummy-inprogress.json"; sourceTree = "<group>"; };
 		600A3DA52BC3CEE9007E96DC /* detail-dummy-failed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detail-dummy-failed.json"; sourceTree = "<group>"; };
 		600A3DA72BC3CEF4007E96DC /* detail-dummy-success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detail-dummy-success.json"; sourceTree = "<group>"; };
-		600A3DA92BC3CF21007E96DC /* DummyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyJSON.swift; sourceTree = "<group>"; };
+		600A3DA92BC3CF21007E96DC /* DummyJsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyJsonService.swift; sourceTree = "<group>"; };
 		600A3DAC2BC3D13A007E96DC /* HistoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailModel.swift; sourceTree = "<group>"; };
 		60C580EC2BBEC42600F49357 /* swiftui-mv-state-pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-mv-state-pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C580EF2BBEC42600F49357 /* swiftui_mv_state_patternApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_mv_state_patternApp.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		60C5810E2BBECFD800F49357 /* CoffeeOrderListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderListScreen.swift; sourceTree = "<group>"; };
 		60C581102BBED5B600F49357 /* RoutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePath.swift; sourceTree = "<group>"; };
 		60C581142BBEDB1100F49357 /* AddOrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderScreen.swift; sourceTree = "<group>"; };
+		60CD9BBE2BC8E7550033F343 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		60CD9BC52BC8E8F90033F343 /* RegisterDepenency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDepenency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				600A3D992BC3C249007E96DC /* CombineExt in Frameworks */,
+				60CD9BC22BC8E8320033F343 /* Dependencies in Frameworks */,
+				60CD9BC42BC8E8320033F343 /* DependenciesMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +96,6 @@
 				600A3DA32BC3CED0007E96DC /* detail-dummy-inprogress.json */,
 				600A3DA52BC3CEE9007E96DC /* detail-dummy-failed.json */,
 				600A3DA72BC3CEF4007E96DC /* detail-dummy-success.json */,
-				600A3DA92BC3CF21007E96DC /* DummyJSON.swift */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 		60C581002BBEC63700F49357 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				60CD9BBD2BC8E7490033F343 /* Core */,
 				60C580EF2BBEC42600F49357 /* swiftui_mv_state_patternApp.swift */,
 				60C580F12BBEC42600F49357 /* ContentView.swift */,
 			);
@@ -185,6 +193,16 @@
 			path = Clients;
 			sourceTree = "<group>";
 		};
+		60CD9BBD2BC8E7490033F343 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				600A3DA92BC3CF21007E96DC /* DummyJsonService.swift */,
+				60CD9BBE2BC8E7550033F343 /* HistoryService.swift */,
+				60CD9BC52BC8E8F90033F343 /* RegisterDepenency.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +221,8 @@
 			name = "swiftui-mv-state-pattern";
 			packageProductDependencies = (
 				600A3D982BC3C249007E96DC /* CombineExt */,
+				60CD9BC12BC8E8320033F343 /* Dependencies */,
+				60CD9BC32BC8E8320033F343 /* DependenciesMacros */,
 			);
 			productName = "swiftui-mv-state-pattern";
 			productReference = 60C580EC2BBEC42600F49357 /* swiftui-mv-state-pattern.app */;
@@ -234,6 +254,7 @@
 			mainGroup = 60C580E32BBEC42600F49357;
 			packageReferences = (
 				600A3D972BC3C249007E96DC /* XCRemoteSwiftPackageReference "CombineExt" */,
+				60CD9BC02BC8E8320033F343 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
 			);
 			productRefGroup = 60C580ED2BBEC42600F49357 /* Products */;
 			projectDirPath = "";
@@ -264,10 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600A3DAA2BC3CF21007E96DC /* DummyJSON.swift in Sources */,
+				60CD9BBF2BC8E7550033F343 /* HistoryService.swift in Sources */,
+				600A3DAA2BC3CF21007E96DC /* DummyJsonService.swift in Sources */,
 				60C580F22BBEC42600F49357 /* ContentView.swift in Sources */,
 				60C580F02BBEC42600F49357 /* swiftui_mv_state_patternApp.swift in Sources */,
 				60C581052BBEC92100F49357 /* HttpClients.swift in Sources */,
+				60CD9BC62BC8E8F90033F343 /* RegisterDepenency.swift in Sources */,
 				60C581092BBECC2000F49357 /* CoffeeOrder.swift in Sources */,
 				60C5810B2BBECC7100F49357 /* APIs.swift in Sources */,
 				60C581152BBEDB1100F49357 /* AddOrderScreen.swift in Sources */,
@@ -509,6 +532,14 @@
 				minimumVersion = 1.8.1;
 			};
 		};
+		60CD9BC02BC8E8320033F343 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -516,6 +547,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 600A3D972BC3C249007E96DC /* XCRemoteSwiftPackageReference "CombineExt" */;
 			productName = CombineExt;
+		};
+		60CD9BC12BC8E8320033F343 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60CD9BC02BC8E8320033F343 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		60CD9BC32BC8E8320033F343 /* DependenciesMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60CD9BC02BC8E8320033F343 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = DependenciesMacros;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
