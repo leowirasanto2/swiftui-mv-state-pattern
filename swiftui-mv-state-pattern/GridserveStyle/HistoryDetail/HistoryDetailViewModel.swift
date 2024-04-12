@@ -7,6 +7,7 @@
 
 import Combine
 import CombineExt
+import Dependencies
 import Foundation
 
 enum HistoryDetailState: Equatable {
@@ -61,6 +62,8 @@ class HistoryDetailViewModel: ObservableObject {
 
     @Published var loadingAppear: Bool = false
     @Published var alertAppear = false
+    
+    @Dependency(\.historyService) var historyService
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -128,12 +131,11 @@ class HistoryDetailViewModel: ObservableObject {
         self.state = state
     }
     
-    private func fetchHistory(_ type: DummyJSON.ResponseType = .success) async -> HistoryDetailData? {
+    private func fetchHistory(_ type: DummyJsonImplementation.ResponseType = .success) async -> HistoryDetailData? {
         setState(.loading)
         do {
             try await Task.sleep(nanoseconds: UInt64(2 * Double(NSEC_PER_SEC)))
-            let response: HistoryDetailModel = try await DummyJSON.shared.get(type)
-            return response.data
+            return try await historyService.getDummyHistoryDetail(type)
         } catch {
             print(error.localizedDescription)
             setState(.errorGeneral)

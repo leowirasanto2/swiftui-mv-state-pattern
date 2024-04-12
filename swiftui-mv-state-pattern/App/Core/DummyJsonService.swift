@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import Dependencies
 
-class DummyJSON {
+protocol DummyJsonService {
+    func get<T: Codable>(_ type: DummyJsonImplementation.ResponseType) async throws -> T
+}
+
+class DummyJsonImplementation: DummyJsonService {
     enum ResponseType: String {
         case inprogress = "detail-dummy-inprogress"
         case failed = "detail-dummy-failed"
         case success = "detail-dummy-success"
     }
-    
-    static let shared = DummyJSON()
-    
-    init() {}
     
     func get<T: Codable>(_ type: ResponseType) async throws -> T {
         let responseData = try await data(type)
