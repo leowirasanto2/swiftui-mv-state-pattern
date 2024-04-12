@@ -14,7 +14,7 @@ struct HistoryDetailModel: Codable {
 }
 
 // MARK: - HistoryDetailData
-struct HistoryDetailData: Codable {
+struct HistoryDetailData: Codable, Equatable {
     let status, locationName, transactionDate: String
     let chargedAmount: Double
     let generatedKwh: Double

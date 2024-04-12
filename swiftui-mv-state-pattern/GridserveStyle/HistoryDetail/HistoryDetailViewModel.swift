@@ -11,7 +11,20 @@ import Foundation
 
 enum HistoryDetailState: Equatable {
     static func == (lhs: HistoryDetailState, rhs: HistoryDetailState) -> Bool {
-        return true
+        switch (lhs, rhs) {
+        case (.inprogresshistoryloaded(let lhsData), .inprogresshistoryloaded(let rhsData)):
+            return lhsData == rhsData
+        case (.failedhistoryloaded(let lhsData), .failedhistoryloaded(let rhsData)):
+            return lhsData == rhsData
+        case (.successhistoryloaded(let lhsData), .successhistoryloaded(let rhsData)):
+            return lhsData == rhsData
+        case (.errorGeneral, .errorGeneral):
+            return true
+        case (.loading, .loading):
+            return true
+        default:
+            return false
+        }
     }
     
     case inprogresshistoryloaded(data: HistoryDetailData?)
